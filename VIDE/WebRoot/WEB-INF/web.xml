@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+	
+	 <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InitServlet</servlet-name>
+    <servlet-class>com.nit.VIDE.util.InitServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/config/system.properties</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>InitServlet</servlet-name>
+    <url-pattern>/initservlet</url-pattern>
+  </servlet-mapping>
+	
+	
+	
+  <servlet>
+    
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ChangequestionAction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.ChangequestionAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.ChangePasswordAction</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.RecoverPasswordAction</servlet-class>
+  </servlet>
+    <servlet>
+    <servlet-name>AddContent</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.AddContent</servlet-class>
+    
+    
+  </servlet>
+  <servlet>
+    
+    <servlet-name>ViewUsers</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.ViewUsers</servlet-class>
+  </servlet>
+  <servlet>
+    
+    <servlet-name>logoutaction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.LogoutAction</servlet-class>
+  </servlet>
+   <servlet>
+    
+    <servlet-name>ChekUserAction</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.ChekUserAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetResult</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.GetResult</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSearchResult</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.GetSearchResult</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetSearchingInfo</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.GetSearchingInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ClientSearchInfo</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.ClientSearchInfo</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookDetails</servlet-name>
+    <servlet-class>com.nit.VIDE.Action.BookDetails</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangequestionAction</servlet-name>
+    <url-pattern>/ChangequestionAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePasswordAction</servlet-name>
+    <url-pattern>/ChangePasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecoverPasswordAction</servlet-name>
+    <url-pattern>/RecoverPasswordAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>logoutaction</servlet-name>
+    <url-pattern>/logoutaction</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ChekUserAction</servlet-name>
+    <url-pattern>/ChekUserAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddContent</servlet-name>
+    <url-pattern>/AddContent</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewUsers</servlet-name>
+    <url-pattern>/ViewUsers</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetResult</servlet-name>
+    <url-pattern>/GetResult</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSearchResult</servlet-name>
+    <url-pattern>/GetSearchResult</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetSearchingInfo</servlet-name>
+    <url-pattern>/GetSearchingInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ClientSearchInfo</servlet-name>
+    <url-pattern>/ClientSearchInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookDetails</servlet-name>
+    <url-pattern>/BookDetails</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
